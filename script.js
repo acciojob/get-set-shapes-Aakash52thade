@@ -1,23 +1,23 @@
 //complete this code
 class Rectangle {
 	constructor(width, height){
-		this._width;
-		this._height;
+		this._width = width;
+		this._height = height;
 	}
 	get width(){
-		this._width;
+	  return this._width;
 	}
 
 	get height(){
-       this._height;
+       return this._height;
 	}
 
-	get getArea(){
+	 getArea(){
 		return this._width * this._height;
 	}
 }
 
-class Square extends Animal {
+class Square extends Rectangle {
 	constructor(side){
 		super(side, side);
 		this._side = side;
@@ -37,12 +37,6 @@ console.log(Square.width);
 console.log(Square.height);
 console.log(Square.getArea());
 console.log(Square.getPerimeter());
-
-
-
-
-
-
 
 
 // Do not change the code below this line
